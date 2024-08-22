@@ -1,0 +1,53 @@
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.custom-calendar {
+  border: none;
+
+  width: 70%;
+}
+
+.custom-calendar .react-calendar__tile {
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.custom-calendar .react-calendar__tile--active {
+  background-color: #4caf50 !important;
+  color: white !important;
+}
+
+.selected-date {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.custom-time-picker {
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.custom-time-picker .react-time-picker__wrapper {
+  border: none;
+}
+
+.custom-time-picker .react-time-picker__inputGroup__input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.custom-time-picker .react-time-picker__clock {
+  margin-top: 10px;
+}

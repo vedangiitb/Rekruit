@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dropdown-menu {
+    width: 250px;
+}
+
+.dropdown-item {
+    white-space: normal;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-item .description {
+    font-size: 14px;
+    color: #666;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(8, 8, 8, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item .material-symbols-outlined {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 2%;
+}
+
+#navbarDropdown::after {
+    display: none;
+}
+
+.nav-item .nav-link:hover {
+    color: #007BFF !important;
+    transition: color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s;
+}

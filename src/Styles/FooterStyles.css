@@ -1,0 +1,11 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}

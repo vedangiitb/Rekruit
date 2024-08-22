@@ -1,0 +1,176 @@
+.HomeSection1 {
+    display: flex;
+    padding-top: 5%;
+    padding-right: 0%;
+    padding-left: 8%;
+    padding-bottom: 5%;
+    background-color: #1d3557;
+}
+
+.HomeSection2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 8%;
+    background-color: black;
+    color: white;
+}
+
+.HomeSection2-Items {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    padding-top: 2%;
+    padding-right: 5%;
+}
+
+.HomeSection2-Item {
+    width: 40%;
+}
+
+.HomeSection3 {
+    background-color: #1d3557;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 8%;
+}
+
+.HomeSection3-Items {
+    display: flex;
+    flex-direction: row;
+}
+
+.HomeSection3-Item1 {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.HomeSection3-Item2 {
+    width: 50%;
+}
+
+.sec3-img {
+    width: 20vw;
+    height: 43vh;
+}
+
+.HomeSection4 {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 8%;
+}
+
+.HomeSection4-Item-Container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+    width: 53%;
+}
+
+.HomeSection4-Item {
+    display: flex;
+    flex-direction: column;
+}
+
+.HomeSection5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    justify-content: center;
+    background-color: #1d3557;
+    color: white;
+}
+
+.HomeSection5-Text {
+    width: 50%;
+    text-align: center;
+}
+
+.HomeSection5-Btn {
+    padding: 10%;
+    white-space: nowrap;
+}
+
+.home4Img {
+    width: 38%;
+}
+
+.sec3img-2 {
+    margin-left: 10%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .HomeSection1 {
+        height: 50vh;
+    }
+
+    .HomeSection2-Items {
+        flex-direction: column;
+    }
+
+    .HomeSection2-Item {
+        width: 90%;
+    }
+
+    .HomeSection3-Items {
+        flex-direction: column;
+    }
+
+    .HomeSection3 {
+        padding: 2%;
+    }
+
+    .HomeSection3-Item1 {
+        width: 90%;
+        margin-left: 0%;
+    }
+
+    .HomeSection3-Item2 {
+        width: 90%;
+    }
+
+    .sec3-img {
+        width: 98%;
+        position: relative;
+        filter: brightness(30%);
+    }
+
+    .sec3img-2 {
+        margin-left: 0%;
+    }
+
+    .HomeSection3-Item1 {
+        position: absolute;
+        padding: 2%;
+    }
+
+    .HomeSection5-Text {
+        width: 90%;
+    }
+
+    .home4Img {
+        width: 95%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        object-fit: cover;
+        filter: brightness(20%);
+    }
+
+    .HomeSection4 {
+        padding-left: 2%;
+    }
+
+    .HomeSection4-Item-Container {
+        position: absolute;
+        width: 80%;
+    }
+}

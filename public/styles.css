@@ -1,0 +1,56 @@
+body{
+    background-color:#ffffff;
+}
+
+.btn-rounded{
+  border-radius: 50px; 
+}
+
+.btn-1{
+  background-color: #e63946;
+  color: #ffffff;
+  margin: 3px;
+  padding: 2.2%;
+}
+
+.heading{
+  font-family: fantasy;
+  font-size: 50px;
+}
+
+.heading-2{
+  font-family: fantasy;
+  font-size: 35px;
+}
+
+.heading-3{
+  font-family: fantasy;
+  font-size: 28px;
+}
+
+.text{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 21px;
+}
+
+.btn-1:hover{
+  background-color: #ad000e;
+  color: #ffffff;
+}
+
+.btn-2{
+  background-color: #ffffff;
+  color: #1d3557;
+  margin: 3px;
+  padding: 2.2%;
+}
+
+.btn-2:hover{
+  background-color: #bebebe;
+  color: #1d3557;
+}
+
+.rounded-img{
+  border-radius: 20px;
+}
+
