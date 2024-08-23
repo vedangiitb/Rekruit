@@ -14,12 +14,18 @@ export default function InterviewWrapper({ user }) {
     useEffect(() => {
         const checkAllowed = async () => {
             try {
-                const response1 = await fetch(`https://2ur410rhci.execute-api.us-east-1.amazonaws.com/dev/get-interview?id=${id}`);
+                const response1 = await fetch(`https://2ur410rhci.execute-api.us-east-1.amazonaws.com/dev/get-interview?id=${id}`,{
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': user.storage[user.userDataKey.slice(0, -8) + 'idToken']
+                      },
+                });
                 const response2 = await fetch('https://cognito-idp.us-east-1.amazonaws.com/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-amz-json-1.1',
-                        'X-Amz-Target': 'AWSCognitoIdentityProviderService.GetUser'
+                        'X-Amz-Target': 'AWSCognitoIdentityProviderService.GetUser',
+                        'Authorization': user.storage[user.userDataKey.slice(0, -8) + 'idToken']
                     },
                     body: JSON.stringify({
                         "AccessToken": user.storage['CognitoIdentityServiceProvider.559co16dlu99kleqa9lrvj4q09.' + user.username + '.accessToken']

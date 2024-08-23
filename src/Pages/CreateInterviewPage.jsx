@@ -119,7 +119,8 @@ export default function CreateInterview({ user }) {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-amz-json-1.1',
-                        'X-Amz-Target': 'AWSCognitoIdentityProviderService.GetUser'
+                        'X-Amz-Target': 'AWSCognitoIdentityProviderService.GetUser',
+                        'Authorization': user.storage[user.userDataKey.slice(0, -8) + 'idToken']
                     },
                     body: JSON.stringify({
                         "AccessToken": user.storage['CognitoIdentityServiceProvider.559co16dlu99kleqa9lrvj4q09.' + ownerName.username + '.accessToken']
@@ -147,6 +148,7 @@ export default function CreateInterview({ user }) {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
+                            'Authorization': user.storage[user.userDataKey.slice(0, -8) + 'idToken']
                         },
                         body: JSON.stringify({
                             intName: intName,

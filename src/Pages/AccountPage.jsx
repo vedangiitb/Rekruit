@@ -56,7 +56,8 @@ export default function AccountPage({ user, logoutUser, loginUser }) {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-amz-json-1.1',
-                        'X-Amz-Target': 'AWSCognitoIdentityProviderService.GetUser'
+                        'X-Amz-Target': 'AWSCognitoIdentityProviderService.GetUser',
+                        'Authorization': user.storage[user.userDataKey.slice(0, -8) + 'idToken']
                     },
                     body: JSON.stringify({
                         "AccessToken": user.storage['CognitoIdentityServiceProvider.559co16dlu99kleqa9lrvj4q09.' + user.username + '.accessToken']
@@ -83,7 +84,8 @@ export default function AccountPage({ user, logoutUser, loginUser }) {
                     const response = await fetch(`https://2ur410rhci.execute-api.us-east-1.amazonaws.com/dev/get-user-interviews?id=${attributes[0].Value}`, {
                         method: 'GET',
                         headers: {
-                            'Content-Type': 'application/json'
+                            'Content-Type': 'application/json',
+                            'Authorization': user.storage[user.userDataKey.slice(0, -8) + 'idToken']
                         }
                     });
 

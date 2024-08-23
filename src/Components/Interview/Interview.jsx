@@ -159,6 +159,7 @@ export default function Interview({ user, isInterviewer }) {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': user.storage[user.userDataKey.slice(0, -8) + 'idToken']
         },
         body: JSON.stringify({
           code: code,
@@ -208,6 +209,7 @@ export default function Interview({ user, isInterviewer }) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Authorization': user.storage[user.userDataKey.slice(0, -8) + 'idToken']
       },
       body: JSON.stringify({ tests: testinputs, code: code, language: lang }),
     });
@@ -237,6 +239,7 @@ export default function Interview({ user, isInterviewer }) {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': user.storage[user.userDataKey.slice(0, -8) + 'idToken']
         },
         body: JSON.stringify({
           id: id,
@@ -253,7 +256,12 @@ export default function Interview({ user, isInterviewer }) {
 
   const fetchAndSetInterviewData = async (id) => {
     try {
-      const response = await fetch(`https://2ur410rhci.execute-api.us-east-1.amazonaws.com/dev/get-interview?id=${id}`)
+      const response = await fetch(`https://2ur410rhci.execute-api.us-east-1.amazonaws.com/dev/get-interview?id=${id}`, {
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': user.storage[user.userDataKey.slice(0, -8) + 'idToken']
+        },
+      })
       const { Items } = await response.json()
       if (Items) {
         const { code, tests, question, isIDEPresent } = Items[0]
