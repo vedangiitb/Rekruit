@@ -17,7 +17,7 @@ export default function Navbar({ currentUser }) {
                     display: "flex",
                     gap: "30px",
                     backgroundColor: "#ffffff",
-                    boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)"
+                    // boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)"
                 }}>
                     <a className="navbar-brand" href="/">
                         <img src="logo.png" alt="Logo" style={{
@@ -113,7 +113,7 @@ export default function Navbar({ currentUser }) {
                         </ul>
                         <div className="d-flex ms-auto">
                             <a className="nav-link" href="/account" style={{
-                                color: "#007BFF",
+                                color: "#1d3557",
                                 fontWeight: "600",
                                 display: "flex",
                                 alignItems: "center"
