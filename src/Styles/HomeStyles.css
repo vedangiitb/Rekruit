@@ -4,7 +4,7 @@
     align-items: center;
     padding: 5% 8%;
     background-color:#ffffff;
-    color: #1d3557;
+    color: #001427;
 }
 
 .text-content {
@@ -23,7 +23,7 @@
     font-size: 1.4rem;
     margin-bottom: 30px;
     line-height: 1.5;
-    color:  #1d3557;
+    color: #001427;
 }
 
 .button-group {
@@ -39,13 +39,13 @@
 }
 
 .btn-1 {
-    background-color:  #1d3557;
+    background-color: #001427;
     color: #f1faee;
     border: none;
 }
 
 .btn-2 {
-    background-color: #457b9d;
+    background-color: #001427;
     color: #f1faee;
     border: none;
 }
@@ -74,7 +74,7 @@
     padding-bottom: 5%;
     padding-left: 8%;
     background-color:#ffffff;
-    color: #1d3557;
+    color: #001427;
     /* color: rgb(39, 39, 39); */
 }
 
@@ -92,7 +92,7 @@
 
 .HomeSection3 {
     background-color:#ffffff;
-    color: #1d3557;
+    color: #001427;
     display: flex;
     flex-direction: column;
     padding-top: 4%;
@@ -123,7 +123,7 @@
     display: flex;
     flex-direction: column;
     background-color:#ffffff;
-    color: #1d3557;
+    color: #272200;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 8%;
@@ -148,7 +148,7 @@
     padding: 5%;
     justify-content: center;
     background-color:#ffffff;
-    color: #1d3557;
+    color: #001427;
 }
 
 .HomeSection5-Text {
