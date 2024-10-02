@@ -1,29 +1,64 @@
-.HomeSection1 {
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Commissioner:wght@100..900&display=swap');
+
+.home-section-1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 5% 8%;
-    background-color:#ffffff;
+    padding: 4% 8%;
+    background-color: #ffffff;
     color: #001427;
+}
+
+.home-section-2 {
+    display: flex;
+    background-color: #ffffff;
+    color: #001427;
+    padding: 4% 8%;
+}
+
+.section-2-menu{
+    max-width: 55vw;
+}
+
+.sec-2-imgs{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
+    /* object-fit: cover; */
 }
 
 .text-content {
-    flex: 1;
-    margin-right: 5%;
-    max-width: 600px;
+    margin-right: 2%;
+    max-width: 700px;
     margin-bottom: 20px;
 }
 
-.heading {
-    font-size: 3.5rem;
+.heading-item {
     margin-bottom: 15px;
+    color: #00289F;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 0.7s step-end infinite;
 }
 
-.subheading {
-    font-size: 1.4rem;
-    margin-bottom: 30px;
-    line-height: 1.5;
-    color: #001427;
+.cursor {
+    display: inline-block;
+    width: 10px;
+    color: #00289F;
+    animation: blink-animation 0.7s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .button-group {
@@ -31,127 +66,55 @@
     gap: 15px;
 }
 
-.btn {
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-1 {
-    background-color: #001427;
-    color: #f1faee;
-    border: none;
-}
-
-.btn-2 {
-    background-color: #001427;
-    color: #f1faee;
-    border: none;
-}
-
-.btn:hover {
-    opacity: 0.9;
-}
-
-.image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+.image-container img {
+    object-fit: cover;
 }
 
 .intro-image {
-    width: 100%;
-    max-width: 600px;
-    margin-left: auto;
+    width: 35vw;
+    overflow: hidden;
+    object-fit: contain;
+    border-radius: 10px
 }
 
-
-.HomeSection2 {
+.get-started{
     display: flex;
-    flex-direction: column;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 8%;
-    background-color:#ffffff;
-    color: #001427;
-    /* color: rgb(39, 39, 39); */
+    text-decoration: none;
+    align-items: center;
+    color: #00289F;
+    font-weight: 500;
+    cursor: pointer;
 }
 
-.HomeSection2-Items {
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    padding-top: 2%;
-    padding-right: 5%;
+.get-started:hover{
+    color: #00175d;
 }
 
-.HomeSection2-Item {
-    width: 40%;
+.get-started .material-symbols-outlined {
+    transition: transform 0.3s ease; /* Smooth transition for the arrow */
 }
 
-.HomeSection3 {
-    background-color:#ffffff;
-    color: #001427;
-    display: flex;
-    flex-direction: column;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    padding-left: 8%;
+.get-started:hover .material-symbols-outlined {
+    transform: translateX(5px); /* Move the arrow 5 pixels to the right */
 }
 
-.HomeSection3-Items {
-    display: flex;
-    flex-direction: row;
+.sec-2-img{
+    width: 25vw;
+    /* height: 90vh; */
+    object-fit: contain;
 }
 
-.HomeSection3-Item1 {
-    width: 50%;
-    margin-left: 10%;
-}
-
-.HomeSection3-Item2 {
-    width: 50%;
-}
-
-.sec3-img {
-    width: 20vw;
-    height: 43vh;
-}
-
-.HomeSection4 {
-    display: flex;
-    flex-direction: column;
-    background-color:#ffffff;
-    color: #272200;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 8%;
-}
-
-.HomeSection4-Item-Container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 6%;
-    width: 53%;
-}
-
-.HomeSection4-Item {
-    display: flex;
-    flex-direction: column;
-}
-
-.HomeSection5 {
+.home-section-5 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5%;
     justify-content: center;
-    background-color:#ffffff;
+    background-color: #ffffff;
     color: #001427;
 }
 
-.HomeSection5-Text {
+.home-section-5-text {
     width: 50%;
     text-align: center;
 }
@@ -161,17 +124,8 @@
     white-space: nowrap;
 }
 
-.home4Img {
-    width: 38%;
-}
-
-.sec3img-2 {
-    margin-left: 10%;
-}
-
-
-@media only screen and (max-width: 768px) {
-    .HomeSection1 {
+@media only screen and (max-width: 860px) {
+    .home-section-1 {
         flex-direction: column;
         text-align: center;
     }
@@ -182,90 +136,34 @@
     }
 
     .intro-image {
-        width: 80%;
+        width: 85vw;
         margin: 0 auto;
     }
 
-    .HomeSection2-Items {
-        flex-direction: column;
-    }
-
-    .HomeSection2-Item {
-        width: 90%;
-    }
-
-    .HomeSection3-Items {
-        flex-direction: column;
-    }
-
-    .HomeSection3 {
-        padding: 2%;
-    }
-
-    .HomeSection3-Item1 {
-        width: 90%;
-        margin-left: 0%;
-    }
-
-    .HomeSection3-Item2 {
-        width: 90%;
-    }
-
-    .sec3-img {
-        width: 98%;
-        position: relative;
-        filter: brightness(30%);
-    }
-
-    .sec3img-2 {
-        margin-left: 0%;
-    }
-
-    .HomeSection3-Item1 {
-        position: absolute;
-        padding: 2%;
-    }
-
-    .HomeSection5-Text {
-        width: 90%;
-    }
-
-    .home4Img {
-        width: 95%;
-        height: 100vh;
-        position: relative;
-        overflow: hidden;
-        object-fit: cover;
-        filter: brightness(20%);
-    }
-
-    .HomeSection4 {
-        padding-left: 2%;
-    }
-
-    .HomeSection4-Item-Container {
-        position: absolute;
+    .home-section-5-text {
         width: 80%;
+    }
+    
+    .section-2-menu{
+        max-width: 80vw;
+    }
+
+    .sec-2-img{
+        display: none;
     }
 }
 
 
 @media (max-width: 480px) {
-    .heading {
-        font-size: 2rem;
+    .intro-image {
+        width: 85vw;
+        justify-content: center;
+        margin: 0 auto;
     }
 
-    .subheading {
-        font-size: 1rem;
+    .home-section-5-text {
+        width: 90%;
     }
 
-    .btn {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
 
-    .button-group {
-        flex-direction: column;
-        gap: 10px;
-    }
 }

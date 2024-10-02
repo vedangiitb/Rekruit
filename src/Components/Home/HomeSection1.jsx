@@ -1,18 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 
 export default function HomeSection1() {
+    const texts = [" Interviews", "Assessments", "Resume Screenings", "Hiring"];
+    const [displayedText, setDisplayedText] = useState("");
+    const [currentTextIndex, setCurrentTextIndex] = useState(0);
+    const typingSpeed = 100;
+    const pauseTime = 2000;
+
+    useEffect(() => {
+        let typingTimeout;
+        let charIndex = -1;
+
+        const typeText = () => {
+            if (charIndex < texts[currentTextIndex].length - 1) {
+                charIndex++;
+                setDisplayedText(prev => prev + texts[currentTextIndex][charIndex]);
+                typingTimeout = setTimeout(typeText, typingSpeed);
+            } else {
+                clearTimeout(typingTimeout);
+                setTimeout(() => {
+                    setDisplayedText("");
+                    setCurrentTextIndex(prev => (prev + 1) % texts.length);
+                }, pauseTime);
+            }
+        };
+
+        typeText();
+
+        return () => clearTimeout(typingTimeout);
+    }, [currentTextIndex]);
+
+
+
     return (
-        <div className="HomeSection1">
+        <div className="home-section-1">
             <div className="text-content">
-                <h1 className="heading">Revolutionizing Your Tech Interviews</h1>
-                <p className="subheading">Streamline your hiring process with our cutting-edge assessment tools, designed to identify top talent with precision and efficiency.</p>
+                <h1>Revolutionize Your Tech<h1 className="heading-item">{displayedText}<span className='cursor'>_</span></h1></h1>
+                <h4>Streamline your hiring process with our cutting-edge assessment tools, designed to identify top talent with precision and efficiency and build your best tech team</h4>
                 <div className="button-group">
-                    {/* <a href="#section-2"><button className="btn btn-1 btn-rounded">More About Us</button></a> */}
-                    <a href="/firm-onboarding"><button className="btn btn-1 btn-rounded">Get Started</button></a>
+                    <a href="/firm-onboarding"><button className="btn btn-primary" style={{ backgroundColor: "#00289F" }}>Get Started</button></a>
+                    <a href="/firm-onboarding"><button className="btn btn-primary" style={{ color: "#00289F", backgroundColor: "white" }}>Book Demo</button></a>
                 </div>
             </div>
             <div className="image-container">
-                <img src="intro-img-1_n.png" alt="Tech interview illustration" className="intro-image"></img>
+                <img src="intro-img-1_n.png" alt="Tech interview illustration" className="intro-image" ></img>
             </div>
         </div>
     );

@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .container-1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px auto;
@@ -10,20 +11,7 @@ body {
     background-color: #fff;
     border-radius: 8px;
 }
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    text-align: left;
-}
-p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
+
 .linkedin {
     display: inline-block;
     margin-top: 10px;
@@ -36,10 +24,13 @@ h2 {
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .linkedin:hover {
     background-color: #0e76a8;
     color: #fff;
 }
-.about-project, .about-me {
+
+.about-project,
+.about-me {
     margin-bottom: 30px;
 }
