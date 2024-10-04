@@ -2,10 +2,10 @@ import React from "react";
 import '../Styles/AboutStyles.css'
 export default function AboutUs() {
     return (
-        <div className="container-1">
+        <div className="container-1 about-project" >
             <h1>About This Project</h1>
 
-            <div className="about-project">
+            <div>
                 <p>
                     <a href="https://rekruit.in/" style={{ color: "black" }}>Rekruit</a> & <a href="https://assess.rekruit.in/" style={{ color: "black" }}>
                         Rekruit Assess</a> technical assessment and interview platforms are designed to streamline the hiring process by providing
@@ -14,9 +14,16 @@ export default function AboutUs() {
                     of the evaluation process so that only the most qualified and deserving candidates are selected. Recognizing the critical importance
                     of accurate assessments in hiring, this platform integrates advanced features specifically engineered to prevent and detect any form of
                     cheating or dishonest behavior.
+                </p>
 
+                <br />
+
+                <p>
                     In addition to its robust anti-cheating mechanisms, the platform offers a seamless user experience for both recruiters and candidates.
                     Designed with scalability and flexibility in mind, this platform can adapt to the needs of organizations of all sizes, from startups to large enterprises.</p>
+
+                <br />
+
                 <p>
                     This project is not fully complete and is in its initial stages and not available for public access. But that will be done soon. If you want to get access (even though you will have only limited access),
                     or want to contribute to this project write to me at <a href="mailto:vedangbaleiitb@gmail.com" style={{ color: "black", marginLeft: "5px" }}><i className="fa fa-envelope" aria-hidden="true"></i>vedangbaleiitb@gmail.com</a>
@@ -24,19 +31,26 @@ export default function AboutUs() {
                 </p>
             </div>
 
-            <div className="about-me">
+            <br />
+
+            <div>
                 <p>
                     This project is solely developed by me, Vedang Bale. I am a final year undergrad at IIT Bombay with a passion for building innovative
                     software solutions. With my experience in software dev, I have developed this platform from the ground up, focusing on functionality,
                     user experience, and performance.
                 </p>
+
+                <br />
+
                 <p>
                     I have a goal in mind which is to create tools that not only meet but exceed the expectations of users, making the technical hiring process more efficient and effective.
                 </p>
 
+                <br />
+
                 <p>Connect with me!</p>
 
-                <div style={{ display: "flex",gap:"10px" }}>
+                <div style={{ display: "flex", gap: "10px" }}>
                     <div>
                         <li-icon type="app-linkedin-bug-color-icon" class="ivm-view-attr__icon  " size="large" role="img" aria-label="LinkedIn">
                             <a href="https://www.linkedin.com/in/vedang-bale-845839224/">

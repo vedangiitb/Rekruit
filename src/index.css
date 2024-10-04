@@ -192,9 +192,7 @@ input:checked+.slider:before {
   position: relative;
   border-radius: 15px;
   width: 50%;
-  /* Set the width to 50% */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  /* Add a slight shadow for better visibility */
   height: 75vh;
   box-sizing: border-box;
 

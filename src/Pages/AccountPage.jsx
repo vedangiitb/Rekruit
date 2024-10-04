@@ -243,11 +243,11 @@ export default function AccountPage({ user, logoutUser, loginUser }) {
         return (
             <div className="account-page">
                 <div className="side-bar">
-                    <div style={{ marginBottom: "20px" }}>
-                        <span class="material-symbols-outlined">
+                    <div style={{ marginBottom: "20px",display:"flex",flexDirection:"column",alignContent:"center" }}>
+                        <span class="material-symbols-outlined custom-icon">
                             account_circle
                         </span>
-                        <p>{name}, <span className="selected">{companyName}</span></p>
+                        <p style={{display:"flex",alignContent:"center"}}>{name}, <span className="selected">{companyName}</span> <span class="material-symbols-outlined" onClick={logout} style={{cursor:"pointer",marginLeft: '4px'}}>logout</span></p>
 
                     </div>
 
@@ -266,7 +266,6 @@ export default function AccountPage({ user, logoutUser, loginUser }) {
                 </div>
 
                 <div className="calendar">
-
                     <div className="interviews-info">
                         <h5>Interviews for {selectedDate.toDateString()}</h5>
                         {renderInterviewsForSelectedDate()}

@@ -40,7 +40,7 @@ export default function Navbar({ currentUser }) {
                                         </a>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item nav-dropdown" href="/create-interview" style={{ padding: "10px", borderBottom: "1px solid #eee" }}>
+                                        <a className="dropdown-item nav-dropdown" href="https://assess.rekruit.in/" style={{ padding: "10px", borderBottom: "1px solid #eee" }}>
                                             <div>
                                                 <h5>Rekruit Assess</h5>
                                                 <p style={{ color: "#666" }}>Conduct your tech screening with Rekruit Assess to get the best for your company, with powerful analytics and cheating detections algorithms</p>
@@ -114,7 +114,7 @@ export default function Navbar({ currentUser }) {
                                         </a>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item nav-dropdown" href="/create-interview" style={{ padding: "25px", borderBottom: "1px solid #eee" }}>
+                                        <a className="dropdown-item nav-dropdown" href="https://assess.rekruit.in/" style={{ padding: "25px", borderBottom: "1px solid #eee" }}>
                                             <div>
                                                 <h5>Rekruit Assess</h5>
                                                 <p style={{ color: "#666" }}>
