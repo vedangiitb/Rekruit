@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../Styles/Navbar.css';
+import TopBar from "./TopBar";
 
 export default function Navbar({ currentUser }) {
     let Login = "Login";

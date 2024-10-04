@@ -25,6 +25,7 @@ import { poolData } from './cognitoConfig';
 import { CognitoUserPool } from 'amazon-cognito-identity-js';
 import { CognitoUser, AuthenticationDetails } from 'amazon-cognito-identity-js'
 import { signUpUser } from './Pages/SignUp/Firm/UserSignUp';
+import TopBar from './Layouts/TopBar';
 
 
 const userPool = new CognitoUserPool(poolData);
@@ -75,6 +76,7 @@ export default function App() {
 
       <Router>
 
+        <TopBar/>
         <Navbar currentUser={currentUser} />
 
         <Routes>

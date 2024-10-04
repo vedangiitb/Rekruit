@@ -5,7 +5,7 @@ export default function HomeSection1() {
     const [displayedText, setDisplayedText] = useState("");
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const typingSpeed = 100;
-    const pauseTime = 2000;
+    const pauseTime = 1000;
 
     useEffect(() => {
         let typingTimeout;
@@ -37,6 +37,7 @@ export default function HomeSection1() {
             <div className="text-content">
                 <h1>Revolutionize Your Tech<h1 className="heading-item">{displayedText}<span className='cursor'>_</span></h1></h1>
                 <h4>Streamline your hiring process with our cutting-edge assessment tools, designed to identify top talent with precision and efficiency and build your best tech team</h4>
+                <br />
                 <div className="button-group">
                     <a href="/firm-onboarding"><button className="btn btn-primary" style={{ backgroundColor: "#00289F" }}>Get Started</button></a>
                     <a href="/firm-onboarding"><button className="btn btn-primary" style={{ color: "#00289F", backgroundColor: "white" }}>Book Demo</button></a>

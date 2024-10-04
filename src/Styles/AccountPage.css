@@ -1,64 +1,64 @@
 .account-page {
     display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 1%;
+    padding: 4% 8%;
     background-color: #ffffff;
 }
 
-.account-info {
-    width: 70%;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+.side-bar {
+    flex: 0.5;
 }
 
-.info-list {
-    list-style-type: none;
-    padding: 0;
+.side-bar-item {
+    margin-bottom: 40px;
+    cursor: pointer;
 }
 
-.info-item {
-    margin-bottom: 10px;
+.selected {
+    color: #00289F;
+    font-weight: 500;
 }
 
-.button-group {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
+.selected-info {
+    flex: 1.5;
+    padding: 0% 2%;
+}
+
+.calendar {
+    flex: 1;
 }
 
 .custom-calendar {
-    margin-top: 20px;
-    width: 50%;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #e0ecff;
+    border-radius: 15px;
+    font-size: 16px;
+    width: 100% !important;
+    height: 90%;
+    padding: 10px;
+    max-height: 400px !important;
+    max-width: 400px !important;
+
 }
 
 .interviews-info {
-    width: 50%;
-    padding: 20px;
-    margin-top: 20px;
-    margin-left: 2px;
-    height: 60vh;
-    background-color: #ffffff;
-    border-radius: 8px;
     overflow-y: auto;
-
 }
 
-.interview-list {
-    list-style-type: none;
-    padding: 0;
+.profile-info-item {
+    border: 1px solid #c1c1c1;
+    border-radius: 20px;
+    padding: 5px 25px;
+    margin-bottom: 10px;
 }
 
 .interview-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f0f0f0;
+    padding: 15px;
+    background-color: #f7f7f7;
     border-radius: 4px;
 }
 
@@ -67,11 +67,14 @@
 }
 
 .interview-time {
-    margin-left: 10px;
     color: #666666;
 }
 
 .no-interviews {
     color: #666666;
-    font-style: italic;
+}
+
+.interview-list {
+    list-style-type: none;
+    padding: 0;
 }
